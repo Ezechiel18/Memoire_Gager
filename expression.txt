@@ -1,0 +1,14 @@
+
+#Script expresion
+Ce CASE sert uniquement à éviter l’erreur quand tu tombes sur le cas "0 / 0".
+
+Donc :
+
+Si tu as 15/15 → 100 % ✅
+
+Si tu as 0/0 → tu ne veux pas afficher de valeur → NULL ou « Non applicable »
+
+CASE
+  WHEN  "Join_Cou_1"  = 0 THEN NULL
+  ELSE 100 *  "Join_Count"  /  "Join_Cou_1" 
+END
